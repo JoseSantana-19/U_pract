@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISP - Segundo Parcial | Uleam</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="hero" id="hero">
+      <!-- TODO (Jordan): gradiente institucional, logo, animación -->
+      <img src="/uleam-logo.svg" alt="Logo Uleam" class="logo" />
+      <h1>Universidad Laica Eloy Alfaro de Manabí</h1>
+      <p class="subtitle">Carrera: Tecnologías de la Información</p>
+      <p class="subtitle">Asignatura: Integración de Sistemas y Plataformas</p>
+      <p class="subtitle">Docente: Ing. Maholy Velásquez, Mg.</p>
+      <button id="theme-toggle" aria-label="Cambiar tema">🌗</button>
+    </header>
+
+    <main>
+      <section id="pipeline-info">
+        <h2>Pipeline en vivo</h2>
+        <p>Build: <code id="build-commit"></code> — <span id="build-time"></span></p>
+      </section>
+
+      <section id="team">
+        <h2>Equipo</h2>
+        <!-- TODO (Michael): tarjetas generadas desde src/data/team.js -->
+        <div id="team-grid" class="team-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- TODO (Jordan): commit hash / timestamp visible aquí -->
+      <p>Segundo Parcial - Unidad III - 2025-2</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
